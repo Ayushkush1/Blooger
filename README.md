@@ -1,2 +1,2 @@
-# portfolio
-This is my personal portfolio website.
+#Blooger
+This is a blog reading website.
