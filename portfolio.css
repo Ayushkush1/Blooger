@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+
+
+.portfolio .heading {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 18em;
+    margin-top: 1em;
+font-weight: 800;
+    font-size: 1.6rem;
+}
+
+
+.portfolio .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 5rem 7rem;
+    margin-top: 3em;
+}
+
+.portfolio .box-container .box1 {
+    flex: 1 1 18rem;
+    height: 14rem;
+
+    position: relative;
+    overflow: hidden;
+    border: .7rem solid #fff;
+    box-shadow: 0.5rem 0.5rem rgba(2, 0, 0, 0.027);
+    background: rgb(253, 253, 253);
+    border-radius: .5rem;
+}
+
+.portfolio .box-container .box1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio .box-container .box1:hover img {
+    height: 75%;
+    width: 70%;
+    transition: .4s;
+}
+
+.portfolio .box-container .box1 h3 {
+    position: absolute;
+    bottom: .7rem;
+    left: 1rem;
+    font-size: 1.2rem;
+    color: rgb(24, 24, 26);
+    text-transform: uppercase;
+    background: var(--main-color);
+}
+
+.portfolio .box-container .box1 .icons {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    background: var(--main-color);
+}
+
+.portfolio .box-container .box1 .icons a {
+    display: block;
+    height: 3.4rem;
+    width: 3.4rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: #333;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+.portfolio .box-container .box1 .icons a:hover {
+    background: var(--main-color);
+    color: rgb(247, 18, 18);
+}

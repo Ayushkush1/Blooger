@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+
+
+:root {
+
+    --clr: rgb(253, 239, 240);
+}
+
+
+body {
+    background: linear-gradient(315deg, #f59384, #f3f368);
+
+}
+
+/* magic navigation bar */
+
+.navigation {
+    position: relative;
+    width: 100%;
+    height: 3.7rem;
+    background: linear-gradient(315deg, #00ccff, #d400d4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 1em 1em;
+
+}
+
+
+.navigation .logo {
+    display: flex;
+    margin-left: 1em;
+    filter: drop-shadow(-20px 20px 40px #010d148a);
+
+}
+
+.navigation .logo h2 {
+    color: aquamarine;
+    font-size: 3.1rem;
+    top: -0.2rem;
+    position: relative;
+    text-shadow: 1px 1px 1px mediumaquamarine,
+                 1px 2px 1px mediumaquamarine, 
+                 1px 3px 1px mediumaquamarine, 
+                 1px 4px 1px mediumaquamarine,
+                 1px 5px 3px #414040,
+                 1px 6px 4px #414040,
+                 1px 7px 5px #414040;
+
+}
+
+
+.navigation .logo h3 {
+    color: aliceblue;
+    font-size: 1.4rem;
+    position: relative;
+    top: .1em;
+    right: .4em;
+    text-shadow: 1px 1px 1px rgb(184, 189, 192),
+                 1px 2px 1px rgb(184, 189, 192),
+                 1px 3px 1px rgb(184, 189, 192),
+                 1px 5px 3px #414040,
+                 1px 6px 4px #414040,
+                 1px 7px 5px #414040;
+}
+
+.navigation .logo h5 {
+    color: orange;
+    font-size: 1rem;
+    position: relative;
+    top: 1.8em;
+    right: 3.2em;
+    text-shadow: 1px 1px 1px rgb(211, 141, 10),
+                 1px 2px 1px rgb(211, 141, 10),
+                 1px 5px 3px #414040,
+                 1px 6px 4px #414040;
+}
+
+               
+
+.navigation ul {
+    display: flex;
+    width: 54vw;
+    gap: 3rem;
+
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 5vw;
+    height: 11vh;
+    z-index: 1;
+
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 5vw;
+    text-align: center;
+    font-weight: 500;
+}
+
+.navigation ul li a .icon {
+
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--clr);
+}
+
+.navigation ul li:hover a .icon {
+
+    transform: translateY(-30px);
+}
+
+.navigation ul li a .text {
+
+    position: absolute;
+    color: var(--clr);
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.navigation ul li:hover a .text {
+    opacity: 1;
+    transform: translateY(10px);
+
+}
+
+/* Intro starts */
+
+#content{
+    height: 63vh;
+}
+.intro {
+    margin-left: 8rem;
+    padding-bottom: 20%;
+    margin-top: 13%;
+}
+
+.intro h1 {
+    font-size: 50px;
+    color: rgb(20, 20, 20);
+    margin-bottom: 15px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+
+.intro h2 {
+    margin-top: 23px;
+    position: absolute;
+}
+
+.intro p {
+    color: rgb(51, 50, 50);
+}
+
+span {
+    color: rgb(245, 35, 87);
+}
+
+.intro a {
+    background: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(223, 221, 221);
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.intro a:hover {
+    color: rgb(255, 254, 254);
+    background: rgb(245, 35, 87);
+
+}
+
+.images {
+
+    width: 39vw;
+    height: 75vh;
+    position: relative;
+    bottom: 40rem;
+    left: 45rem;
+
+}
+
+.images img {
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape {
+    bottom: 40px;
+}
+
+.images:hover .man {
+    left: 45%;
+}
+
+/* footer starts */
+footer {
+    background: linear-gradient(300deg, #f38c9a, #216dfa, #f38c9a);
+    border-radius: 60% 60% 0% 0%;
+}
+
+footer .follow {
+    display: flex;
+    gap: 3em;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 1rem;
+
+}
+
+footer .follow a {
+    display: flex;
+    text-align: center;
+    position: relative;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: var(--clr);
+    border-radius: 50%;
+
+
+}
+
+footer .follow a:hover {
+    color: rgb(248, 218, 189);
+
+
+}
+
+footer .med ul {
+    display: flex;
+    gap: 3em;
+    list-style: none;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+footer .med ul li {
+    display: flex;
+    position: relative;
+}
+
+footer .med ul li a {
+    text-decoration: none;
+    position: relative;
+    font-size: .8em;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    border-radius: 10%;
+}
+
+footer .med ul li:hover a {
+    color: rgb(248, 218, 189);
+}
+
+footer p {
+
+    color: #fff;
+    padding-bottom: 5px;
+    font-size: .7rem;
+    text-align: center;
+}

@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* :root {
+
+    --clr: rgb(253, 209, 212);
+}
+
+
+body {
+    background: var(--clr);
+}
+
+/* magic navigation bar */
+
+/* .navigation {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background: rgb(65, 63, 63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 35px;
+}
+
+.navigation ul {
+    display: flex;
+    width: 400px;
+
+
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.navigation ul li a .icon {
+
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--clr);
+}
+
+.navigation ul li.active a .icon {
+
+    transform: translateY(-35px);
+}
+
+.navigation ul li a .text {
+
+    position: absolute;
+    color: var(--clr);
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.navigation ul li.active a .text {
+    opacity: 1;
+    transform: translateY(10px);
+
+}
+
+.indicator {
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    background: green;
+    border-radius: 50%;
+    border: 6px solid var(--clr);
+    transition: 0.5s;
+
+}
+
+.indicator::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -10px 0 0 var(--clr);
+}
+
+.indicator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: -1px -10px 0 0 var(--clr);
+}
+
+.navigation ul li:nth-child(1).active~.indicator {
+
+    transform: translate(calc(70px * 0));
+
+}
+
+.navigation ul li:nth-child(2).active~.indicator {
+
+    transform: translate(calc(70px * 1));
+
+}
+
+.navigation ul li:nth-child(3).active~.indicator {
+
+    transform: translate(calc(70px * 2));
+
+}
+
+.navigation ul li:nth-child(4).active~.indicator {
+
+    transform: translate(calc(70px * 3));
+
+}
+
+.navigation ul li:nth-child(5).active~.indicator {
+
+    transform: translate(calc(70px * 4));
+
+}  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+/* 
+nav {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 1.5em 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: .4em 1.7em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: .94rem;
+}
+
+nav ul li a:active{
+    color: red;
+}
+
+.logo{
+    
+    height: 2.2rem;
+    margin-left: -6em;
+} */
+
+/* section start */
+.services .heading {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1em 10em;
+    font-size: 1.5rem;
+}
+
+.services .heading span {
+    color: rgb(253, 17, 17);
+}
+
+
+.services .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.7rem;
+    margin: 2rem 8rem;
+}
+
+.services .box-container .box {
+
+    flex: 1 1 17rem;
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+    margin: .5rem;
+}
+
+.services .box-container .box i {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    color: #fff;
+    background: orange;
+    border-radius: 50%;
+}
+.services .box-container .box i:hover {
+
+background: linear-gradient( 100deg,rgb(241, 191, 96),rgb(253, 159, 82));
+
+}
+.services .box-container .box h3 {
+    color: #444;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.services .box-container .box p {
+    color: #666;
+    font-size: 1rem;
+    padding-top: 1rem;
+
+}
