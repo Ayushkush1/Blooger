@@ -138,11 +138,13 @@ p{
 
 .nav .nav-items {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
 }
 
 .nav .nav-items .nav-link {
-    padding: 1.6rem 1rem;
+    padding: 1.5rem 1rem;
     font-size: 1.1rem;
     position: relative;
     font-family: var(--Abel);
@@ -176,24 +178,25 @@ p{
 
 .nav .social {
     font-size: 1.4rem;
-    padding: 1rem 0;
-    display: block;
+    padding: 0;
+    display: flex;
+    align-items: center;
 }
 
 .nav .social i {
-    padding: 0.2rem;
+    padding: .5rem;
     color: var(--text-grey);
     transition: transform 80ms ease-in;
 }
 
 .nav .social a .fa-youtube {
-color: red;
+color: rgb(236, 6, 6);
 }.nav .social a .fa-facebook {
-color: rgb(0, 68, 255);
+color: rgba(0, 68, 255, 0.842);
 }.nav .social a .fa-instagram {
-color: rgb(253, 61, 93);
+color: rgb(255, 54, 87);
 }.nav .social a .fa-twitter {
-color: rgb(0, 189, 252);
+color: rgba(0, 189, 252, 0.918);
 }
 
 
@@ -268,7 +271,7 @@ main .blog-post .blog-content {
 }
 
 main .blog-content .blog-title {
-    padding: 1.5rem 0;
+    padding: 0.5rem;
 }
 
 main .blog-content .btn-blog {
@@ -341,6 +344,10 @@ main .post-content .post-title a{
     color: var(--text-grey);
 }
 
+main .post-content .post-title a:hover{
+    color: #707075;
+}
+
 .site-content .post-content .post-title .post-btn{
     border-radius: 0;
     padding: .7rem 1.5rem;
@@ -370,6 +377,10 @@ main .post-content .post-title a{
 
 .site-content> .sidebar .category-list{
     font-family: var(--Livvic);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
 }
 
 .site-content> .sidebar .category-list .list-items{
@@ -559,6 +570,8 @@ footer.footer .move-up span:hover{
     nav .toggle-collapse{
         width: 80% !important;
     }
+
+    
 }
 
 
@@ -598,5 +611,20 @@ footer.footer .move-up span:hover{
 
     footer.footer .containers{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav .social {
+        font-size: 1.4rem;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav .social i {
+        padding: 0.8rem 1rem;
+        color: var(--text-grey);
+        transition: transform 80ms ease-in;
     }
 }
